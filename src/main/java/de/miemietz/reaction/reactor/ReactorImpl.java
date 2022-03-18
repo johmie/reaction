@@ -20,10 +20,10 @@ public class ReactorImpl implements Reactor {
     @Override
     public void react(Action<?> action) {
 
-        Proxy proxy = (Proxy) action.getProxy();
-        Method method = action.getMethod();
-        Object[] args = action.getArgs();
-        Future<Object> result = (Future<Object>) action.getResult();
+        Proxy proxy = (Proxy) action.proxy();
+        Method method = action.method();
+        Object[] args = action.args();
+        Future<Object> result = (Future<Object>) action.result();
 
         result.reset();
         proxy.setHandler(new FutureResultMethodHandler(result));
