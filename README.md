@@ -23,7 +23,7 @@ MyBlockingDemo myDemo = reaction.make(MyBlockingDemo.class);
 ```
 Call any method of your class instance and Reaction will execute each line of code (non-blocking) in parallel:
 ```
-myDemo.block(10); // Blocks for 10 seonds
+myDemo.block(10); // Blocks for 10 seconds
 myDemo.block(5);
 MyBlockingDemo myDemo2 = myDemo.block(15);
 myDemo2.block(10);
