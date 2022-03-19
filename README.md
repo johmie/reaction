@@ -10,7 +10,7 @@ Asynchronous execution is thread-based and scales based on the number of CPU cor
 
 ## Run your code with Reaction
 
-Create an application instance of Reaction
+Create an application instance of Reaction:
 ```
 import de.miemietz.reaction.app.Application;
 import de.miemietz.reaction.app.ThreadBootstrap;
@@ -34,5 +34,5 @@ myDemo.block(15);
 
 ## Missing (upcoming) features
 
-- Support for objects inserted via constructor, setter or created with the new keyword
+- Support for objects injected via constructor, setter or created with the new keyword
 - Support of coroutines (fibers)
