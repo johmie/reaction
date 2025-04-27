@@ -21,7 +21,7 @@ public class ApplicationImpl implements Application {
     }
 
     @Override
-    public void run() throws InterruptedException {
+    public void run() {
 
         actionLoop.run();
     }

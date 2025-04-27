@@ -21,16 +21,14 @@ public class ActionLoopImpl implements ActionLoop {
     }
 
     @Override
-    public void run() throws InterruptedException {
+    public void run() {
 
         Action<?> action;
         do {
             action = actionQueue.get();
             if (action != null) {
                 reactor.react(action);
-            } else {
-                Thread.sleep(1);
             }
-        } while (true);
+        } while (action != null);
     }
 }

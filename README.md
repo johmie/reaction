@@ -32,6 +32,11 @@ myDemo.block(15);
 ```
 *In this example, the last line of code is passed after just a few milliseconds and all method calls are completed after 15 (instead of 60) seconds at the latest.*
 
+Remember to run Reaction after all your method calls:
+```
+reaction.run();
+```
+
 ## Missing (upcoming) features
 
 - Support for objects injected via constructor, setter or created with the new keyword

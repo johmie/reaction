@@ -6,5 +6,5 @@ public interface ActionLoop {
 
     void addAction(Action<?> action);
 
-    void run() throws InterruptedException;
+    void run();
 }
